@@ -14,6 +14,7 @@ print('connected to firebase')
 
 bank_ref = db.collection("BankAccount")
 docs = bank_ref.stream()
+print(docs)
 
 for doc in docs:
     print(f"{doc.id} => {doc.to_dict()}")
