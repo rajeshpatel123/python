@@ -18,5 +18,5 @@ print(docs)
 
 for doc in docs:
     print(f"{doc.id} => {doc.to_dict()}")
-    
+    print(doc.id)
     ***/
