@@ -11,7 +11,7 @@ app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 print('connected to firebase')
-
+print('and welcom to firebase')
 bank_ref = db.collection("BankAccount")
 docs = bank_ref.stream()
 print(docs)
