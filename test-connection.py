@@ -12,11 +12,12 @@ db = firestore.client()
 
 print('connected to firebase')
 print('and welcom to firebase')
+
 bank_ref = db.collection("BankAccount")
 docs = bank_ref.stream()
 print(docs)
 
 for doc in docs:
     print(f"{doc.id} => {doc.to_dict()}")
-    
+    print(f"{doc.id} => {doc.to_dict()}")
     ***/
